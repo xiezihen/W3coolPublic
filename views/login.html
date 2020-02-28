@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>UofTextbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style/w3style.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/login.js"></script>
+  <link rel="stylesheet" href="assets/style/style.css">
+
+</head>
+
+<body>
+
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  <!-- Left Column -->
+  <div class="w3-half">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+
+        <div class="w3-display-container">
+
+        </div>
+        <div class="w3-container">
+        <br>
+          <a href ='/' id = 'homeButton'>Home Page</a><br>
+          <h2 class="w3-text-brown w3-padding-16">Register</h2>
+        <form id='formR' action='' method='POST'>
+        <hr>
+        <div id='gear'>
+          <label for='userN'>Username: </label>
+          <input class='formdata' type='text' name='username' id='userN' placeholder='must be unique'></input>
+          <span id="error_username" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='pass'>Password: </label>
+          <input class='formdata' type='password' name='password' id='pass'></input>
+          <span id="error_password" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='conf'>Confirm Password: </label>
+          <input class='formdata' type='password' name='confirm' id='conf'></input>
+          <span id="error_confirm" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='fn'>First Name: </label>
+          <input class='formdata' type='text' name='firstname' id='fn'></input>
+          <span id="error_firstname" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='ln'>Last Name: </label>
+          <input class='formdata' type='text' name='lastname' id='ln' value=''></input>
+          <span id="error_lastname" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='Bar'>Campus: </label>
+            <select class='formdata' name='campus' id='sBar'>
+            <option value=''>Optional</option>
+            <option value='STG'>St. George</option>
+            <option value='UTM'>UTM</option>
+            <option value='UTSC'>UTSC</option>
+
+        </select><br>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='yr'>Year: </label>
+          <input class='formdata' type='text' name='year' id='yr' placeholder='enter year of study'></input>
+          <span id="error_year" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='crs'>Courses: </label>
+          <input class='formdata' type='text' name='courses' id='crs' placeholder='ex. CSC108H5, MAT102H5, ANT102H5'></input>
+          <span id="error_courses" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='emailadd'>Email Address: </label>
+          <input class='formdata' type='text' name='email' id='emailadd' placeholder='enter UofT email'></input>
+          <span id="error_email" class='errors'></span>
+        </div>
+        <hr>
+        <div id='gear'>
+          <label for='phone'>Phone Number: </label>
+          <input class='formdata' type='text' name='phonenum' id='phone'></input>
+          <span id="error_phonenum" class='errors'></span><br>
+        </div>
+        </form>
+        <hr>
+        <button type='submit' form='formR' value='Submit'>Register</button>
+        <span id='dbregister'></span><br>
+          <hr><br>
+
+        </div>
+      </div><br>
+
+    </div>
+  <!-- Right Column -->
+  <div class="w3-half">
+
+    <div class="w3-white w3-text-grey w3-card-4">
+
+      <div class="w3-display-container">
+
+      </div>
+      <div class="w3-container">
+        <br>
+          <h2 class="w3-text-brown w3-padding-16">Existing Account</h2>
+          <form id='formL' action='' method='POST'>
+          <hr>
+          <div id='gear'>
+            <label for='userN'>Username: </label>
+            <input class='formdata' type='text' name='username' id='userN'></input>
+            <span id='invaliduser' class='loginErrors'></span>
+          </div>
+          <hr>
+          <div id='gear'>
+            <label for='pass'>Password: </label>
+            <input class='formdata' type='password' name='password' id='pass'></input>
+            <span id='invalidpass' class='loginErrors'></span><br>
+          </div>
+        </form>
+        <hr>
+        <button type='submit' form='formL' value='Submit'>Log in</button>
+        <span id='dblogin'></span><br>
+        <hr><br>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <br>
+</div>
+</body>
+</html>

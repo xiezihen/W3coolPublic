@@ -1,0 +1,8 @@
+{
+  "name": "UofTextbooks",
+  "description": "This app does one little thing, and does it well.",
+  "repository": "https://github.com/CSC309-Fall-2016/W3cool",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["UofT", "textbook", "w3cool"],
+  "image": "heroku/nodejs"
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>UofTextbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style/w3style.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/listings.js"></script>
+	<link rel="stylesheet" href="../assets/style/style.css">
+</head>
+
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+
+        <div class="w3-display-container">
+          <img src="assets/style/book.jpg" style="width:100%" alt="Profile Picture">
+			<div class="w3-display-topleft w3-container">
+				<i class="fa fa-align-justify fa-fw w3-margin-right w3-margin-top w3-xxlarge w3-text-white" id = 'menu'></i>
+				<div class="w3-text-white" id ='dropdown'>
+				<a href ='/login' id = 'aLogin'>Login</a><br>
+				<a href ='/' id = 'aIndex'> Home</a><br>
+				<a href ='/profile' id = 'aProfile'>My Profile</a><br>
+				</div>
+			</div>
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h1 id='name'>Hi,</h1>
+          </div>
+
+        </div>
+        <div class="w3-container">
+        <br><hr>
+		<form id = 'filter'>
+			<b>Filters</b><br>
+			Textbook Name<br>
+			<input id ='textbook' name='textbook' type = 'text' class='formdata'><br>
+			Course<br>
+			<input id ='course' name='course' type = 'text' class='formdata'><br>
+			ISBN<br>
+			<input id ='isbn' name='isbn' type = 'text' class='formdata'><br>
+			Seller<br>
+			<input id ='seller' name='seller' type = 'text' class='formdata'><br>
+			Author<br>	
+			<input id ='author' name='author' type = 'text' class='formdata'><br>
+			<hr>
+            <input type="submit" value="search"  style='background-color: lightgrey;font-size: 20px; display: inline-block' class="w3-text-brown">
+
+		</form>
+
+          <br>
+
+        </div>
+      </div><br>
+
+
+    </div>
+     <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-brown w3-padding-16">Textbooks</h2>
+        <div class="w3-container">
+          <table id='myTable'>
+            <tr>
+              <th>NAME</th>
+              <th>AUTHOR</th>
+              <th>ISBN</th>
+              <th>COURSE</th>
+              <th>PRICE</th>
+              <th>NOTES</th>
+              <th><i class='fa fa-trash-o fa-fw w3-large w3-text-white'></i></th>
+            </tr>
+
+
+          </table>
+          <br>
+
+          <hr>
+        </div>
+      </div>
+
+
+
+
+
+    <!-- End Right Column -->
+    </div>
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

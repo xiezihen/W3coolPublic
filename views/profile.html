@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>UofTextbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style/w3style.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/profile.js"></script>
+  <link rel="stylesheet" href="../assets/style/style.css">
+
+</head>
+
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+
+        <div class="w3-display-container">
+          <img src="assets/style/book.jpg" style="width:100%" alt="Profile Picture">
+      <div class="w3-display-topleft w3-container">
+        <i class="fa fa-align-justify fa-fw w3-margin-right w3-margin-top w3-xxlarge w3-text-white" id = 'menu'></i>
+        <div class="w3-text-white" id ='dropdown'>
+        <a href ='/login' id = 'aLogin'>Login</a><br>
+        <a href ='/' id = 'aIndex'> Home</a><br>
+        <a href ='/profile' id = 'aProfile'>My Profile</a><br>
+        </div>
+      </div>
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h1 id='name'>{{ username }}</h1>
+          </div>
+
+        </div>
+        <div class="w3-container">
+        <br>
+          <div id='gear'>
+            <i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-brown"></i><label>First Name:</label>
+            <span id="firstname" class="datainfo">{{ firstname }}</span><br>
+            <br>
+            <a href="#" class="editlink">Edit</a>
+            <a class="savebtn">Save</a>
+          </div>
+          <hr>
+
+          <div id='gear'>
+            <i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-brown"></i><label>Last Name:</label>
+            <span id="lastname" class="datainfo">{{ lastname }}</span><br>
+            <br>
+            <a href="#" class="editlink">Edit</a>
+            <a class="savebtn">Save</a>
+          </div>
+          <hr>
+          <div id='gear'>
+            <i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-brown"></i><label>Campus:</label>
+            <span id="campus" class="datainfo">{{ campus }}</span><br>
+            <br>
+            <a href="#" class="editlink">Edit</a>
+            <a class="savebtn">Save</a>
+          </div>
+          <hr>
+
+          <div id='gear'>
+            <i class="fa fa-mortar-board fa-fw w3-margin-right w3-large w3-text-brown"></i><label>Year of Study:</label>
+            <span id="year" class="datainfo">{{ year }}</span><br>
+            <br>
+            <a href="#" class="editlink">Edit</a>
+            <a class="savebtn">Save</a>
+          </div>
+          <hr>
+
+          <div id='gear'>
+            <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-brown"></i><label>Email:</label>
+            <span id="email" class="datainfo">{{ email }}</span><br>
+            <br>
+            <a href="#" class="editlink">Edit</a>
+            <a class="savebtn">Save</a>
+          </div>
+          <hr>
+
+          <div id='gear'>
+            <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-brown"></i><label>Phone Number:</label>
+            <span id="phone" class="datainfo">{{ phone }}</span><br>
+            <br>
+            <a href="#" class="editlink">Edit</a>
+            <a class="savebtn">Save</a>
+          </div>
+          <hr>
+
+
+
+          <br>
+
+        </div>
+      </div><br>
+
+
+    </div>
+     <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-brown w3-padding-16">Textbooks</h2>
+        <div class="w3-container">
+          <table id='myTable'>
+            <tr>
+              <th>NAME</th>
+              <th>AUTHOR</th>
+              <th>ISBN</th>
+              <th>COURSE</th>
+              <th>PRICE</th>
+              <th>NOTES</th>
+              <th><i class='fa fa-trash-o fa-fw w3-large w3-text-white'></i></th>
+            </tr>
+
+
+          </table>
+          <br>
+
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"> Add Textbook</h2>
+        <div class="w3-container">
+          <form id='bookinfo'>
+            <span class="bookname">Textbook Name:</span><br>
+            <input id = 'bookname' class='formdata' name='textbook' type='text' required>
+            <span id="error_textbook" class='errors'></span>
+            <br>
+            <span class="author">Author:</span><br>
+            <input id = 'author' class='formdata' name='author' type='text' required>
+            <span id="error_author" class='errors'></span>
+            <br>
+            <span class="isbn">Isbn:</span><br>
+            <input id = 'isbn' class='formdata' name='isbn' type='text' required>
+            <span id="error_isbn" class='errors'></span>
+            <br>
+            <span class="course">Course: (optional)</span><br>
+            <input id = 'course' class='formdata' name='courses' type='text' placeholder='eg. CSC108'>
+            <span id="error_courses" class='errors'></span>
+            <br>
+            <span class="price">Price:</span><br>
+            <input id = 'price' class='formdata' name='price' type='text' placeholder='eg. 20' required>
+            <span id="error_price" class='errors'></span>
+            <br>
+            <span class="note">Note:(optional)</span><br>
+            <input id = 'note' class='formdata' name='notes' type='text'>
+            <span id="error_notes" class='errors'></span>
+            <br>
+            <br>
+          </form>
+
+          <input type="submit" form="bookinfo" value="Confirm" style='background-color: lightgrey;font-size: 20px; display: inline-block' class="w3-text-brown">
+          <span id='dblistings'></span><br>
+        </div>
+          <hr>
+
+      </div>
+
+
+
+
+    <!-- End Right Column -->
+    </div>
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

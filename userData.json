@@ -1,0 +1,74 @@
+[
+    {
+        "username": "user1",
+        "password": "abc123",
+        "admin": false,
+        "firstName": "Bob",
+        "lastName": "Li",
+        "campus": "UTSG",
+        "yearOfStudy": "1",
+        "phone": "647-888-8888",
+        "email": "bobli@mail.utoronto.ca",
+        "courses": ["CSC108", "CSC165", "MAT137", "LIN100"]
+    },
+    {
+        "username": "user2",
+        "password": "abc123",
+        "admin": false,
+        "firstName": "Jack",
+        "lastName": "Lee",
+        "campus": "UTM",
+        "yearOfStudy": "1",
+        "phone": "647-123-4567",
+        "email": "jacklee@mail.utoronto.ca",
+        "courses": ["ECO100", "CSC120", "MAT133", "LIN100"]
+    },
+    {
+        "username": "user3",
+        "password": "abc123",
+        "admin": false,
+        "firstName": "Kitty",
+        "lastName": "Chen",
+        "campus": "UTSC",
+        "yearOfStudy": "2",
+        "phone": "647-123-7889",
+        "email": "kittychen@mail.utoronto.ca",
+        "courses": ["STA257", "CSC121", "MAT237", "STA261"]
+    },
+    {
+        "username": "user4",
+        "password": "abc123",
+        "admin": false,
+        "firstName": "Cathy",
+        "lastName": "Chen",
+        "campus": "UTSC",
+        "yearOfStudy": "3",
+        "phone": "647-123-5220",
+        "email": "cathychen@mail.utoronto.ca",
+        "courses": ["BIO300", "CSC120", "MAT136", "PSY200"]
+    },
+    {
+        "username": "user5",
+        "password": "abc123",
+        "admin": false,
+        "firstName": "Dory",
+        "lastName": "Ho",
+        "campus": "UTSG",
+        "yearOfStudy": "4",
+        "phone": "647-888-5200",
+        "email": "doryho@mail.utoronto.ca",
+        "courses": ["CSC373", "CSC369", "MAT257", "CSC411"]
+    },
+    {
+        "username": "adminErnest",
+        "password": "abc123",
+        "admin": true,
+        "firstName": "Ernest",
+        "lastName": "The Chicken",
+        "campus": "UTM",
+        "yearOfStudy": "5",
+        "phone": "647-784-5200",
+        "email": "ernest.chicken@mail.utoronto.ca",
+        "courses": ["CSC421", "CSC369", "MAT311", "CSC411"]
+    }
+]

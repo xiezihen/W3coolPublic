@@ -1,0 +1,32 @@
+[
+    {
+        "seller":"user5",
+        "textbook": "Calculus",
+        "author": "James Stewart",
+        "isbn": "9780495012375",
+        "courses": ["MAT135", "MAT136"],
+        "price": "70.00",
+        "notes": "want it gone asap",
+        "keywords": ["Calculus"]
+    },
+    {
+        "seller":"user5",
+        "textbook": "Multivariable Calculus",
+        "author": "James Stewart",
+        "isbn": "9780538498869",
+        "courses": ["MAT235"],
+        "price": "75.00",
+        "notes": "availible for pick up only",
+        "keywords": ["Multivariable Calculus", "Multivariable", "Calculus"]
+    },
+    {
+        "seller":"user3",
+        "textbook": "Mathematical Statistics with Applications",
+        "author": "Dennis D. Wackerly",
+        "isbn": "9780871504104",
+        "courses": ["STA257"],
+        "price": "80.00",
+        "notes": "pick up at UTM only",
+        "keywords": ["Mathematical Statistics with Applications", "Mathematical", "Statistics", "with", "Applications"]
+    }
+]

@@ -1,0 +1,8 @@
+The proposed project seems feasible in the time left.
+
+An aside would be privacy concerns. While displaying emails/phone numbers is
+probably not a great idea, you should at least ensure that non-registered users
+can't see that sort of information. Likewise, you ensure that those
+non-registered users can't see profiles or anything either. This also applies to
+the API (i.e. shouldn't be able to obtain information just be accessing an
+endpoint directly -- should be authenticated).
